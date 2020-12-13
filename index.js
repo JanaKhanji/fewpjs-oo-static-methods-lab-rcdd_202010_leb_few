@@ -10,7 +10,10 @@ static sanitize(string){
 static titleize(string){
   const dontCap =['the', "a", "an", "but", "of", "and", "for", "at", "by", "from"];
   let inputArr= string.split(" ")
-  let output= inputArr.map((el)=>{
+  let output= inputArr.map((el,index)=>{
+    if(index==0){
+      return el
+    }
     if(dontCap.find(item => item==el)==undefined){
      return this.capitalize(el)
     }
