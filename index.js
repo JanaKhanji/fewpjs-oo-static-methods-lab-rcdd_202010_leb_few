@@ -12,7 +12,7 @@ static titleize(string){
   let inputArr= string.split(" ")
   let output= inputArr.map((el)=>{
     dontCap.forEach((item)=>{
-      if (item!=el){
+      if (item!==el){
         el=this.capitalize(el)
       }
       return el
