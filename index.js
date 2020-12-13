@@ -8,11 +8,16 @@ static sanitize(string){
 }
 
 static titleize(string){
-  const dontCap =["the"; "a"; "an"; "but"; "of"; "and"; "for"; "at"; "by"; "from"];
-  return [...string].map((el)=>{
-    
+  const dontCap =["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
+  output= [...string].map((el)=>{
+    dontCap.forEach((item)=>{
+      if (item!=el){
+        capitalize(el)
+      }
+      return el
+    })
   })
-  
+  return output.join(" ")
 }
 
 }
