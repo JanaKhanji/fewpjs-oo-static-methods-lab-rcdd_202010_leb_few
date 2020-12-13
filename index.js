@@ -12,7 +12,7 @@ static titleize(string){
   output= [...string].map((el)=>{
     dontCap.forEach((item)=>{
       if (item!=el){
-        this.capitalize(el)
+        el=this.capitalize(el)
       }
       return el
     })
