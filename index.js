@@ -12,7 +12,7 @@ static titleize(string){
   let inputArr= string.split(" ")
   let output= inputArr.map((el)=>{
     if(dontCap.find(item => item==el)==undefined){
-     return capitalize(el)
+     return this.capitalize(el)
     }
     else{
       return el
