@@ -15,8 +15,8 @@ static titleize(string){
       if (item!==el){
         el=this.capitalize(el)
       }
-      return el
-    })
+        }) 
+        return el
   })
   return output.join(" ")
 }
